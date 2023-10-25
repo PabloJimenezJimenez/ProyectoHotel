@@ -10,9 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
     <title>Hotel Casa Azul</title>
 </head>
 
@@ -20,7 +19,8 @@
     <header>
         <nav id="menu">
             <section id="topHeader">
-                <figure id="logoHotel"><img src="assets/img/logo/laCasaAzulModerno150px.jpg" alt="logo hotel la casa azul"></figure>
+                <figure id="logoHotel"><img src="assets/img/logo/laCasaAzulModerno150px.jpg"
+                        alt="logo hotel la casa azul"></figure>
             </section>
             <section id="headerMenu">
                 <ul>
@@ -36,44 +36,73 @@
     </header>
     <main>
         <section id="historia">
-            
-        </section>
+            <section class="main-section">
+                <section id="historiaText" class="main-text-section">
+                    <section id="HistoriaTitle" class="title-main-text-section">
+                        <h1 id="locationSentence">HOTEL DE LUJO FRENTE AL MAR EN CANTABRIA</h1>
+                        <h3 class="main-title">DESCUBRE</h3>
+                    </section>
+                    <p class="title-main-txt">El esplendoroso Palacio Renacentista, majestuosamente restaurado, se erige
+                        frente al mar
+                        en la pintoresca región de Cantabria. Este lujoso hotel combina a la perfección la arquitectura
+                        histórica con comodidades modernas. Sus habitaciones elegantemente decoradas ofrecen vistas
+                        panorámicas
+                        al cantábrico. El spa, con tratamientos rejuvenecedores, y la gastronomía de clase mundial en su
+                        restaurante
+                        gourmet, hacen de este lugar un refugio de ensueño para una escapada única y relajante en un
+                        entorno
+                        costero idílico.
+                    </p>
+                </section>
+                <section id="carruselHistoria" class="main-img-section carousel slide" data-bs-ride="carousel">
+                    <section class="carousel-inner">
+                        <figure id="historiaImg1" class="main-figure carousel-item active"><img src="assets/img/fachada1.jpg"
+                                alt="fachada hotel la casa azul"></figure>
+                        <figure id="historiaImg" class="main-figure carousel-item "><img
+                                src="assets/img/paisaje1.jpg" alt="paisaje acantilados alrededor"></figure>
+                        <figure id="historiaImg2" class="main-figure carousel-item "><img src="assets/img/spa1_4_3.jpg"
+                                alt="psicina climatizada "></figure>
+                        <figure id="historiaImg3" class="main-figure carousel-item "><img
+                                src="assets/img/imagen jardinPiscina.jpg" alt="piscina y jardin lateral"></figure>
+                    </section>
+                </section>
+            </section>
     </main>
     <script>
-        let previousScrollY = window.scrollY; 
-        window.addEventListener('scroll', ()=>{
+        let previousScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
             let menu = document.getElementById('menu');
-            let y=window.scrollY;
+            let y = window.scrollY;
             console.log('-----------------')
-            console.log('scroll previo '+previousScrollY)
+            console.log('scroll previo ' + previousScrollY)
             console.log(y)
             console.log('-----------------')
-            if( y == 0){
-                if(!menu.classList.contains('no-scroll')){
+            if (y == 0) {
+                if (!menu.classList.contains('no-scroll')) {
                     menu.classList.add('no-scroll');
                     menu.classList.remove('scroll-up');
                 }
-            }else if ((y !=0) && (y>previousScrollY)){
+            } else if ((y != 0) && (y > previousScrollY)) {
                 menu.classList.add('scroll-down');
-                if(menu.classList.contains('no-scroll')){
+                if (menu.classList.contains('no-scroll')) {
                     menu.classList.remove('no-scroll');
                 }
-                if (menu.classList.contains('scroll-up')){
+                if (menu.classList.contains('scroll-up')) {
                     menu.classList.remove('scroll-up');
                 }
-            }else if((y !=0) && (y<previousScrollY)){
+            } else if ((y != 0) && (y < previousScrollY)) {
                 menu.classList.add('scroll-up');
-                if(menu.classList.contains('no-scroll')){
+                if (menu.classList.contains('no-scroll')) {
                     menu.classList.remove('no-scroll');
                 }
-                if (menu.classList.contains('scroll-down')){
+                if (menu.classList.contains('scroll-down')) {
                     menu.classList.remove('scroll-down');
                 }
             }
-            previousScrollY=y;
+            previousScrollY = y;
         })
-            
-        
+
+
     </script>
 </body>
 

@@ -100,7 +100,7 @@ nav.scroll-up, nav.scroll-down {
     transition: all 0.5s;
 }
 
-/* transitiion for li elements from ul of header menu  */
+/* transition for li elements from ul of header menu  */
 #headerMenu>ul>li:hover{
     transform: translateY(-1rem);
     background-color: rgb(0 0 0);;
@@ -108,5 +108,91 @@ nav.scroll-up, nav.scroll-down {
     border: none;
 }
 
+
+
+/* -----------------------------------------------------------------MAIN-------------------------------- */
+
+/* style for main  */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* style from section with the backgroun color in main  */
+main>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+/* style for main section  */
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    min-height: 60vh;
+}
+
+/* max width for the elements inside the class main-section  */
+.main-section>section, .main-section>figure{
+    max-width: 40%;
+}
+
+/* style for main-text-section  */
+.main-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* max width for the elements inside the class main-section  */
+.main-text-section>section, .main-text-section>figure{
+    min-height: 30%;
+}
+
+/* style for title-main-text-section  */
+.title-main-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* style for title-main-txt  */
+.title-main-txt{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* style for h1  inside historia section*/
+#locationSentence{
+    font-size: 1rem ;
+    color: #3db6ff;
+    font-weight: bold
+}
+
+/* style from main-img-section  */
+.main-img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* style for main-figure  */
+.main-figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* style for section historia  */
+#historia{
+    background-color:  #001f3f;
+    color: #fafafa;
+}
 
 
