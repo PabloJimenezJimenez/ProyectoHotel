@@ -1,4 +1,4 @@
-
+/* color azul color: #3db6ff;  */
  /* ---------------------------------------------------HEADER----------------------------------------------- */
 
 /* stlye of computer view (min-width:1024px) for header container*/
@@ -14,6 +14,28 @@ header{
     background-position: center; 
     background-repeat: no-repeat; 
 }
+
+/* style for the hero text */
+#hero-text{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30vw;
+    font-size: 6rem;
+    font-weight: 100;
+}
+
+/* style for titHotel  */
+#titHotel{
+    color: whitesmoke;
+    text-align: center;
+    width: 30vw;
+    font-weight: bold;
+    border: 0.1rem solid #3db6ff;
+}
+
+
+ /* -------------------------------------------------------NAV----------------------------------------------  */
 
  /* style to nav menu  */
  nav#menu {
@@ -85,4 +107,6 @@ nav.scroll-up, nav.scroll-down {
     color: whitesmoke;
     border: none;
 }
+
+
 
