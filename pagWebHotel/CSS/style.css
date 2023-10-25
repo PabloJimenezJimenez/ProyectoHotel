@@ -1,0 +1,88 @@
+
+ /* ---------------------------------------------------HEADER----------------------------------------------- */
+
+/* stlye of computer view (min-width:1024px) for header container*/
+header{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;   
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/fondoheader.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+ /* style to nav menu  */
+ nav#menu {
+    position: fixed;
+    width: 100vw;
+    min-height: 30vh;
+    z-index: 51;
+    top: 0;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav.no-scroll{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+nav.scroll-up, nav.scroll-down {
+    background-color: whitesmoke;
+    transform: translateY(0);
+    box-shadow: 0px 4px 13px 0px rgb(133 113 77 / 30%);
+    transition: all 0.5s;
+}
+
+/* style for section top header  */
+#topHeader{
+    display: flex;
+    min-height: 15vh;
+    width: 20vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* give border radius and margin top to logo image  */
+#logoHotel>img{
+    margin-top: 2rem;
+}
+
+/* style for section headermenu  */
+#headerMenu>ul{
+    display: flex;
+    min-height: 15vh;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* style for li elements from ul of headermenu  */
+#headerMenu>ul>li{
+    display: flex;
+    width: 15%;
+    min-height: 7vh;
+    border: 0.1rem solid rgb(0 0 0);
+    color: rgb(0 0 0);
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* transitiion for li elements from ul of header menu  */
+#headerMenu>ul>li:hover{
+    transform: translateY(-1rem);
+    background-color: rgb(0 0 0);;
+    color: whitesmoke;
+    border: none;
+}
+
