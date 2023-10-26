@@ -21,7 +21,7 @@ header{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     width: 30vw;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 
@@ -88,12 +88,12 @@ nav.scroll-up, nav.scroll-down {
 /* style for li elements from ul of headermenu  */
 #headerMenu>ul>li{
     display: flex;
-    width: 15%;
+    width: 20%;
     min-height: 7vh;
     border: 0.1rem solid rgb(0 0 0);
     color: rgb(0 0 0);
     border-radius: 0.3rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -132,6 +132,7 @@ main>section{
     display: flex;
     justify-content: space-around;
     width: 90vw;
+    padding: 2rem;
     min-height: 60vh;
 }
 
@@ -164,7 +165,6 @@ main>section{
 /* style for title-main-txt  */
 .title-main-txt{
     text-align: justify;
-    font-size: 1.2rem;
     margin: 0;
 }
 
