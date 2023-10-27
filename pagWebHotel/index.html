@@ -7,12 +7,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-    <title>Hotel Casa Azul</title>
+    <link rel="stylesheet" href="CSS/animation.css">
+    <title>Hotel La Casa Azul</title>
 </head>
 
 <body>
@@ -31,52 +27,85 @@
                 </ul>
             </section>
         </nav>
-        <h2 id="hero-text">"Descubre el lujo frente al mar"</h2>
+        <h2 id="hero-text">"Descubre el lujo<br>frente al mar"</h2>
         <h3 id="titHotel">HOTEL GASTRONOMICO LA CASA AZUL</h3>
     </header>
     <main>
-        <section id="historia">
+
+        <section id="historia" class="ext-sec-main">
             <section class="main-section">
+                <h1 id="locationSentence">HOTEL DE LUJO FRENTE AL MAR EN CANTABRIA</h1>
                 <section id="historiaText" class="main-text-section">
                     <section id="HistoriaTitle" class="title-main-text-section">
-                        <h1 id="locationSentence">HOTEL DE LUJO FRENTE AL MAR EN CANTABRIA</h1>
                         <h3 class="main-title">DESCUBRE</h3>
                     </section>
                     <p class="title-main-txt">El esplendoroso Palacio Renacentista, majestuosamente restaurado, se erige
                         frente al mar
-                        en la pintoresca región de Cantabria. Este lujoso hotel combina a la perfección la arquitectura
+                        en la pintoresca región de Cantabria.Este lujoso hotel combina a la perfección la arquitectura
                         histórica con comodidades modernas. Sus habitaciones elegantemente decoradas ofrecen vistas
                         panorámicas
-                        al cantábrico. El spa, con tratamientos rejuvenecedores, y la gastronomía de clase mundial en su
+                        al cantábrico.El spa, con tratamientos rejuvenecedores, y la gastronomía de clase mundial en su
                         restaurante
                         gourmet, hacen de este lugar un refugio de ensueño para una escapada única y relajante en un
                         entorno
                         costero idílico.
                     </p>
                 </section>
-                <section id="carruselHistoria" class="main-img-section carousel slide" data-bs-ride="carousel">
-                    <section class="carousel-inner">
-                        <figure id="historiaImg1" class="main-figure carousel-item active"><img src="assets/img/fachada1.jpg"
-                                alt="fachada hotel la casa azul"></figure>
-                        <figure id="historiaImg" class="main-figure carousel-item "><img
-                                src="assets/img/paisaje1.jpg" alt="paisaje acantilados alrededor"></figure>
-                        <figure id="historiaImg2" class="main-figure carousel-item "><img src="assets/img/spa1_4_3.jpg"
-                                alt="psicina climatizada "></figure>
-                        <figure id="historiaImg3" class="main-figure carousel-item "><img
-                                src="assets/img/imagen jardinPiscina.jpg" alt="piscina y jardin lateral"></figure>
-                    </section>
+                <section class="main-img-section">
+                    <figure id="historiaImg" class="main-figure carousel-item active"><img src="assets/img/fachada1.jpg"
+                            alt="fachada hotel la casa azul"></figure>
                 </section>
             </section>
+        </section>
+        <section id="habitaciones" class="ext-sec-main">
+            <section class="main-text-section">
+                <section class="title-main-text-section">
+                    <h3 class="main-title">"Estilo Contemporáneo junto al Mar"</h3>
+                </section>
+                <p class="title-main-txt">
+                    Experimenta la comodidad y el estilo moderno en nuestras habitaciones. Cada espacio ha sido
+                    diseñado pensando en tu confort y bienestar, ofreciendo una atmósfera elegante y relajante. Disfruta
+                    de instalaciones de última generación y detalles de lujo que te harán sentir como en un oasis de
+                    serenidad en un entorno costero.
+                </p>
+            </section>
+            <section id="tiposHab" class="suite">
+                <section id="doble" class="hab">
+                    <h3>HAB. DOBLE</h3>
+                    <p>"Vistas al mar espectaculares para dos"</p>
+                </section>
+                <section id="dobleSuperior" class="hab">
+                    <h3>HAB. SUPERIOR</h3>
+                    <p>"Vistas al mar panorámicas desde tu ventana"</p>
+                </section>
+                <section id="suite" class="hab">
+                    <h3>SUITE</h3>
+                    <p>"Tu rincón frente al mar"</p>
+                </section>
+            </section>
+        </section>
+        <section id="restaurante" class="ext-sec-main">
+            <section class="main-text-section">
+                <section class="title-main-text-section">
+                    <h3 class="main-title">"Saborea Cantabria"</h3>
+                </section>
+                <p class="title-main-txt">
+                    Descubre la fusión creativa de sabores locales con ingredientes frescos de
+                    proximidad, una experiencia gastronómica única que celebra la riqueza culinaria de Cantabria
+                </p>
+            </section>
+            <section id="imgRest">
+                <section class="img-grande rest1"></section>
+                <section class="img-small"></section>
+            </section>
+        </section>
     </main>
     <script>
+        // evento barra nav superior 
         let previousScrollY = window.scrollY;
         window.addEventListener('scroll', () => {
             let menu = document.getElementById('menu');
             let y = window.scrollY;
-            console.log('-----------------')
-            console.log('scroll previo ' + previousScrollY)
-            console.log(y)
-            console.log('-----------------')
             if (y == 0) {
                 if (!menu.classList.contains('no-scroll')) {
                     menu.classList.add('no-scroll');
@@ -102,6 +131,79 @@
             previousScrollY = y;
         })
 
+        // evento cambio de fondo seccion tipos dentro de seccion tiposhab 
+        const secciones = document.querySelectorAll('.hab');
+        const tipos = document.getElementById('tiposHab');
+        secciones.forEach(seccion => {
+            seccion.addEventListener('mouseenter', () => {
+                // obtengo el id de la seccion en la que estoy 
+                const id = seccion.getAttribute('id');
+                //condicional para elegir el fondo de la seccion tipos hab
+                switch (id) {
+                    case 'doble': {
+                        if (tipos.classList.contains('doble-sup')) {
+                            tipos.classList.remove('doble-sup');
+                        } else if (tipos.classList.contains('suite')) {
+                            tipos.classList.remove('suite');
+                        }
+                        tipos.classList.add('doble');
+                    }; break;
+                    case 'dobleSuperior': {
+                        if (tipos.classList.contains('doble')) {
+                            tipos.classList.remove('doble');
+                        } else if (tipos.classList.contains('suite')) {
+                            tipos.classList.remove('suite');
+                        }
+                        tipos.classList.add('doble-sup');
+                    }; break;
+                    default: {
+                        if (tipos.classList.contains('doble-sup')) {
+                            tipos.classList.remove('doble-sup');
+                        } else if (tipos.classList.contains('doble')) {
+                            tipos.classList.remove('doble');
+                        }
+                        tipos.classList.add('suite');
+                    }
+                }
+            })
+        })
+
+        //evento para iniciar el carrusel de imagenes de la seccion restaurante
+        const sectRestaurante = document.getElementById('restaurante');
+        const imgCarousel = ['rest1', 'rest2', 'rest3'];
+        let imgGrande = document.querySelector('.img-grande');
+        let imgSmall = document.querySelector('.img-small');
+        let flagCarousel = false;
+        let posCarousel = 0;
+        let intervalId;
+        window.addEventListener('scroll', () => {
+            const posSecRest = sectRestaurante.getBoundingClientRect();
+            if (posSecRest.y < 704 && posSecRest.y > -1000) {
+                if (!flagCarousel) { // Inicia el carrusel solo si no está en funcionamiento
+                    startAutoCarousel();
+                    flagCarousel = true;
+                }
+            } else {
+                clearInterval(intervalId); // Detiene el carrusel si está fuera de la vista
+                flagCarousel = false;
+            }
+            //console.log(posSecRest.y)
+        })
+        function mostrarImagen() {
+            if (posCarousel >= imgCarousel.length - 1) {
+                posCarousel = 0;
+            } else {
+                posCarousel++;
+            }
+            if (posCarousel > 0 && posCarousel < imgCarousel.length) {
+                imgGrande.classList.replace(imgCarousel[posCarousel - 1], imgCarousel[posCarousel]);
+            } else if (posCarousel == 0) {
+                imgGrande.classList.replace(imgCarousel[imgCarousel.length - 1], imgCarousel[posCarousel]);
+            }
+        }
+        function startAutoCarousel() {
+            intervalId = setInterval(mostrarImagen, 3000); // Cambio de diapositiva cada 3 segundos
+        }
 
     </script>
 </body>
