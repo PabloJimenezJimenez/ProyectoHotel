@@ -31,12 +31,12 @@
         <h3 id="titHotel">HOTEL GASTRONOMICO LA CASA AZUL</h3>
     </header>
     <main>
-
         <section id="historia" class="ext-sec-main">
             <section class="main-section">
                 <h1 id="locationSentence">HOTEL DE LUJO FRENTE AL MAR EN CANTABRIA</h1>
                 <section id="historiaText" class="main-text-section">
                     <section id="HistoriaTitle" class="title-main-text-section">
+                        <h4 class="main-subtitle"><a href="#">EL HOTEL</a></h4>
                         <h3 class="main-title">DESCUBRE</h3>
                     </section>
                     <p class="title-main-txt">El esplendoroso Palacio Renacentista, majestuosamente restaurado, se erige
@@ -60,6 +60,7 @@
         <section id="habitaciones" class="ext-sec-main">
             <section class="main-text-section">
                 <section class="title-main-text-section">
+                    <h4 class="main-subtitle"><a href="#">HABITACIONES</a></h4>
                     <h3 class="main-title">"Estilo Contemporáneo junto al Mar"</h3>
                 </section>
                 <p class="title-main-txt">
@@ -87,6 +88,7 @@
         <section id="restaurante" class="ext-sec-main">
             <section class="main-text-section">
                 <section class="title-main-text-section">
+                    <h4 class="main-subtitle"><a href="#">GASTRONOMIA</a></h4>
                     <h3 class="main-title">"Saborea Cantabria"</h3>
                 </section>
                 <p class="title-main-txt">
@@ -96,7 +98,7 @@
             </section>
             <section id="imgRest">
                 <section class="img-grande rest1"></section>
-                <section class="img-small"></section>
+                <section class="img-small rest2"></section>
             </section>
         </section>
     </main>
@@ -195,11 +197,20 @@
             } else {
                 posCarousel++;
             }
+            // condicional clase imgGrande 
             if (posCarousel > 0 && posCarousel < imgCarousel.length) {
                 imgGrande.classList.replace(imgCarousel[posCarousel - 1], imgCarousel[posCarousel]);
             } else if (posCarousel == 0) {
                 imgGrande.classList.replace(imgCarousel[imgCarousel.length - 1], imgCarousel[posCarousel]);
             }
+
+            // condicional clase imgSmall 
+            if(posCarousel < imgCarousel.length-1){
+                imgSmall.classList.replace(imgCarousel[posCarousel], imgCarousel[posCarousel+1])
+            }else{
+                imgSmall.classList.replace(imgCarousel[posCarousel], imgCarousel[0])
+            }
+           
         }
         function startAutoCarousel() {
             intervalId = setInterval(mostrarImagen, 3000); // Cambio de diapositiva cada 3 segundos
