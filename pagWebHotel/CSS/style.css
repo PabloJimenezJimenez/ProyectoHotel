@@ -90,11 +90,12 @@ nav.scroll-up, nav.scroll-down {
 /* style for li elements from ul of headermenu  */
 #headerMenu>ul>li{
     display: flex;
-    width: 20%;
+    min-width: 20%;
+    max-width: fit-content;
     min-height: 7vh;
     color: rgb(0 0 0);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
     justify-content: center;
     align-items: center;
@@ -177,7 +178,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* style for main-title  */
