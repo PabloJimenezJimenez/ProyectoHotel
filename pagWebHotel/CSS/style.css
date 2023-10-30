@@ -141,16 +141,17 @@ main{
     width: 70vw;
     padding: 2rem;
     min-height: 80vh;
+    max-height: 120vh;
 }
 
-/* max width for the elements inside the class main-section  */
+/* overfolow hidden for the elements inside the class main-section  */
 .main-section>section{
-    max-height: 40vh;
     overflow: hidden;
 }
 
 /* style for main-text-section  */
 .main-text-section{
+    max-height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -160,7 +161,8 @@ main{
 .main-text-section>section, .main-text-section>p{
     min-width: 30%;
     max-width: 40%;
-    height: 40vh;
+    min-height: 40vh;
+    max-height: fit-content;
 }
 
 /* style for title-main-text-section  */
@@ -200,6 +202,8 @@ main{
 
 /* style from main-img-section  */
 .main-img-section{
+    max-height: 40vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
