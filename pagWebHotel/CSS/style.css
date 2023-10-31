@@ -1,22 +1,22 @@
 /* color azul color: #3db6ff;  */
- /* ---------------------------------------------------HEADER----------------------------------------------- */
+/* ---------------------------------------------------HEADER----------------------------------------------- */
 
 /* stlye of computer view (min-width:1024px) for header container*/
-header{
+header {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100vw;   
+    width: 100vw;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/img/fondoheader.png");
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* style for the hero text */
- #hero-text{
+#hero-text {
     color: whitesmoke;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -24,22 +24,22 @@ header{
     font-size: 4rem;
     font-weight: 100;
     line-height: 5rem;
-} 
+}
 
 /* style for titHotel  */
- #titHotel{
+#titHotel {
     color: rgb(200, 200, 200);
     text-align: center;
     width: 30vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-} 
+}
 
 
- /* -------------------------------------------------------NAV----------------------------------------------  */
+/* -------------------------------------------------------NAV----------------------------------------------  */
 
- /* style to nav menu  */
- nav#menu {
+/* style to nav menu  */
+nav#menu {
     position: fixed;
     width: 100vw;
     height: 20vh;
@@ -50,12 +50,14 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-nav.no-scroll{
+
+nav.no-scroll {
     background-color: transparent;
     box-shadow: none;
 }
 
-nav.scroll-up, nav.scroll-down {
+nav.scroll-up,
+nav.scroll-down {
     background-color: whitesmoke;
     transform: translateY(0);
     box-shadow: 0px 4px 13px 0px rgb(133 113 77 / 30%);
@@ -64,7 +66,7 @@ nav.scroll-up, nav.scroll-down {
 }
 
 /* style for section top header  */
-#topHeader{
+#topHeader {
     display: flex;
     min-height: 15vh;
     width: 20vw;
@@ -74,12 +76,12 @@ nav.scroll-up, nav.scroll-down {
 
 
 /* give border radius and margin top to logo image  */
-#logoHotel>img{
+#logoHotel>img {
     margin-top: 2rem;
 }
 
 /* style for section headermenu  */
-#headerMenu>ul{
+#headerMenu>ul {
     display: flex;
     min-height: 15vh;
     width: 60vw;
@@ -88,7 +90,7 @@ nav.scroll-up, nav.scroll-down {
 }
 
 /* style for li elements from ul of headermenu  */
-#headerMenu>ul>li{
+#headerMenu>ul>li {
     display: flex;
     min-width: 20%;
     max-width: fit-content;
@@ -104,7 +106,7 @@ nav.scroll-up, nav.scroll-down {
 }
 
 /* transition for li elements from ul of header menu  */
-#headerMenu>ul>li:hover{
+#headerMenu>ul>li:hover {
     transform: translateY(-1rem);
     background-color: #001f3f;
     color: whitesmoke;
@@ -117,14 +119,31 @@ nav.scroll-up, nav.scroll-down {
 /* -----------------------------------------------------------------MAIN-------------------------------- */
 
 /* style for main  */
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* style for a inside main  */
+.main-subtitle>a{
+    color: #3db6ff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+    padding: 0.3rem;
+    border-bottom: 0 solid transparent;
+    transition: border 0.5s;
+}
+
+.main-subtitle>a:hover{
+    border-bottom :0.2rem solid  #3db6ff;
+}
+
 /* style from section with the backgroun color in main  */
-.ext-sec-main{
+.ext-sec-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +153,7 @@ main{
 }
 
 /* style for main section  */
-.main-section{
+.main-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -145,12 +164,12 @@ main{
 }
 
 /* overfolow hidden for the elements inside the class main-section  */
-.main-section>section{
+.main-section>section {
     overflow: hidden;
 }
 
 /* style for main-text-section  */
-.main-text-section{
+.main-text-section {
     max-height: fit-content;
     display: flex;
     justify-content: space-around;
@@ -158,7 +177,8 @@ main{
 }
 
 /* max width for the elements inside the class main-section  */
-.main-text-section>section, .main-text-section>p{
+.main-text-section>section,
+.main-text-section>p {
     min-width: 30%;
     max-width: 40%;
     min-height: 40vh;
@@ -166,7 +186,7 @@ main{
 }
 
 /* style for title-main-text-section  */
-.title-main-text-section{
+.title-main-text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,7 +195,7 @@ main{
 }
 
 /* style for title-main-txt  */
-.title-main-txt{
+.title-main-txt {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +204,7 @@ main{
 }
 
 /* style for main-title  */
-.main-title{
+.main-title {
     font-size: 2rem;
     font-weight: 200;
     letter-spacing: 0.4rem;
@@ -193,23 +213,25 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 /* style for h1  inside historia section*/
-#locationSentence{
-    font-size: 1rem ;
+#locationSentence {
+    font-size: 1rem;
     color: #3db6ff;
     font-weight: bold
 }
 
 /* style from main-img-section  */
-.main-img-section{
+.main-img-section {
     max-height: 40vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* style for main-figure  */
-.main-figure{
+.main-figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,18 +239,18 @@ main{
 }
 
 /* style for section historia  */
-#historia{
-    background-color:  #001f3f;
+#historia {
+    background-color: #001f3f;
     color: #fafafa;
 }
 
 /* style for section habitaciones  */
-#habitaciones{
+#habitaciones {
     background-color: #fafafa;
 }
 
 /* style for tiposHab */
-#tiposHab{
+#tiposHab {
     display: flex;
     justify-content: space-around;
     align-items: end;
@@ -237,7 +259,7 @@ main{
 }
 
 /* style for hab  */
-.hab{
+.hab {
     width: 30%;
     height: 100%;
     display: flex;
@@ -248,67 +270,72 @@ main{
     transition: all 1s;
 
 }
+
 /* font size for h3 and p inside class hab  */
-.hab>h3{
+.hab>h3 {
     font-size: 1.3rem;
     letter-spacing: 0.3rem;
 }
-.hab>p{
+
+.hab>p {
     font-size: 1.2rem;
 }
 
-#dobleSuperior{
+#dobleSuperior {
     border-left: 0.1rem solid black;
     border-right: 0.1rem solid black;
     padding-left: 0.5rem;
 }
 
- /* transition for hab section  */
- .hab:hover{
+/* transition for hab section  */
+.hab:hover {
     width: 35%;
     cursor: pointer;
- }
- /* class with doble background  */
-.doble{
+}
+
+/* class with doble background  */
+.doble {
     background-image: url('../assets/img/habitacion2.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
-    transition: all 1s; 
+    transition: all 1s;
 }
 
 /* class with doble superior background  */
-.doble-sup{
+.doble-sup {
     background-image: url('../assets/img/habitacion4.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
-    transition: all 1s; 
+    transition: all 1s;
 }
+
 /* class with suite background  */
-.suite{
+.suite {
     background-image: url('../assets/img/habitacion5.jpg');
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
-    transition: all 1s; 
+    transition: all 1s;
 }
 
 /* style for section restaurante  */
-#restaurante{
+#restaurante {
     background-color: #f2f2f2;
 }
 
 /* style for imgRest  */
-#imgRest{
+#imgRest {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 70%;
     height: 60vh;
 }
+
 /* style for img-grande container  */
-.img-grande{
+.img-grande {
     width: 40%;
     height: 80%;
     overflow: hidden;
@@ -316,7 +343,8 @@ main{
     justify-content: center;
     align-items: center;
 }
-.img-small{
+
+.img-small {
     width: 20%;
     height: 60%;
     overflow: hidden;
@@ -325,27 +353,389 @@ main{
     align-items: center;
 }
 
+/* --------------------img carousel restaurarante-------------------- */
 /* background rest1  */
-.rest1{
+.rest1 {
     background-image: url("../assets/img/restaurante1.png");
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 1s;
 }
+
 /* background rest2  */
-.rest2{
+.rest2 {
     background-image: url("../assets/img/restaurante2.png");
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 1s;
 }
+
 /* background rest3 */
-.rest3{
+.rest3 {
     background-image: url("../assets/img/restaurante3.png");
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 1s;
+}
+
+/* -------------------------------------------------------------- */
+/* section carrousel img spa  */
+#imgSpa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+#imgSpa>section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+    height: 90%;
+}
+
+/* img carrousel wellnes  */
+.spa1 {
+    background-image: url("../assets/img/spa1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.spa2 {
+    background-image: url("../assets/img/spa2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.spa3 {
+    background-image: url("../assets/img/spa3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.spa4 {
+    background-image: url("../assets/img/spa4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.spa5 {
+    background-image: url("../assets/img/jardinPiscina.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+/* background color for section turismo */
+#turismo {
+    background-color: whitesmoke;
+}
+
+/* stlye for section txtTuirismo  */
+#txtTurismo {
+    width: 50%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+/* style for imgTurismo  */
+#imgTurismo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+/* background color for section mar  */
+#mar {
+    /* background-color: #B8C6DB; */
+    width: 50%;
+    border-right: 0.1rem solid black;
+}
+
+#mont {
+    /* background-color: #A8BFA5; */
+    width: 50%;
+}
+/* give grid area to imgTurismoMar */
+#imgTurismoMar {
+    display: grid;
+    grid-template-areas:
+        "SanVicente Oyambre Comillas"
+        "costaCentral1 costaCentral2 costaOriental";
+}
+
+/* give grid area to imgTurismoMont */
+#imgTurismoMont {
+    display: grid;
+    grid-template-areas:
+        "Santillana Santillana"
+        "BarcenaMayor Altamira"
+        "Liebana Picos"
+        "Besaya Besaya2"
+        "Saja Saja2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* style for txt-turismo */
+.txt-turismo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+/* style for img-turismo */
+.img-turismo {
+    width: 100%;
+    min-height: 60vh;
+}
+
+/* style for img-mar */
+.img-mar {
+    height: 100%;
+    width: 100%;
+}
+
+/* style for img-mont */
+.img-mont {
+    height: 100%;
+    width: 100%;
+}
+
+/* background and grid area to img-mar*/
+#SanVicente {
+    grid-area: SanVicente;
+    background-image: url("../assets/img/turismo/SanVicenteDeLABarquera.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#playaOyambre {
+    grid-area: Oyambre;
+    background-image: url("../assets/img/turismo/playaOyambre.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Comillas {
+    grid-area: Comillas;
+    background-image: url("../assets/img/turismo/Comillas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#costaCentral1 {
+    grid-area: costaCentral1;
+    background-image: url("../assets/img/turismo/costaCentral.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#costaCentral2 {
+    grid-area: costaCentral2;
+    background-image: url("../assets/img/turismo/costaCentral2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#costaOriental {
+    grid-area: costaOriental;
+    background-image: url("../assets/img/turismo/PaisajeCostaOriental.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+/* background and grid area to img-mont*/
+#Santillana {
+    grid-area: Santillana;
+    background-image: url("../assets/img/turismo/SantillanaDelMar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#BarcenaMayor {
+    grid-area: BarcenaMayor;
+    background-image: url("../assets/img/turismo/BarcenaMayor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Altamira {
+    grid-area: Altamira;
+    background-image: url("../assets/img/turismo/Altamira.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Liebana {
+    grid-area: Liebana;
+    background-image: url("../assets/img/turismo/Liebana.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Picos {
+    grid-area: Picos;
+    background-image: url("../assets/img/turismo/PicosDeEuropa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Besaya {
+    grid-area: Besaya;
+    background-image: url("../assets/img/turismo/Besaya.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+#Besaya2 {
+    grid-area: Besaya2;
+    background-image: url("../assets/img/turismo/Besaya2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Saja {
+    grid-area: Saja;
+    background-image: url("../assets/img/turismo/sajaBesaya.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#Saja2 {
+    grid-area: Saja2;
+    background-image: url("../assets/img/turismo/sajaBesaya2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+/* ----------------------------------------------------------------FOOTER--------------------------------------- */
+/* style for footer  */
+footer{
+    background-color: rgba(0,0,0,0.8);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* style for a inside footer */
+li>a{
+    color: #f2f2f2;
+    transition: all 1s;
+}
+
+li>a:hover{
+    transform: translateX(1rem);
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.5);
+}
+/* style for section superiorFooter */
+#superiorFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 70%;
+}
+
+/* style for section menusFooter */
+#menusFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50%;
+    max-width: 70%;
+}
+
+/* style for the ul menuLinks */
+#menuLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.8rem;
+}
+
+/* style for ul redes */
+#redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+}
+
+/* style for section inferiorFooter */
+#inferiorFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+/* color for h3 inside inferiorFooter */
+#inferiorFooter>h3{
+    color: #f2f2f2
+}
+
+/* style for ul terminos */
+#terminos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 40%;
 }
