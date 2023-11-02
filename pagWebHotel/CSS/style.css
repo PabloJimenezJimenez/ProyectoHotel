@@ -54,6 +54,7 @@ nav#menu {
 nav.no-scroll {
     background-color: transparent;
     box-shadow: none;
+    transition: all 1s;
 }
 
 nav.scroll-up,
